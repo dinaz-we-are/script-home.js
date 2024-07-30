@@ -16,6 +16,7 @@ function pageSpecificFunctions() {
   }
   
   //
+  //
   
   function initializeGSAPAnimations() {
     const tl = gsap.timeline();
