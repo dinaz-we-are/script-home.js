@@ -58,7 +58,7 @@ function pageSpecificFunctions() {
         {      
           opacity: 1,
           rotationX: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "back.out(1.7)",
           stagger: 0.1,
         }
