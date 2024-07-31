@@ -61,7 +61,7 @@ function pageSpecificFunctions() {
           duration: 1,
           ease: "back.out(1.7)",
           stagger: 0.05,
-        },"<"
+        },"-=0.5"
       )
 
       .fromTo(
