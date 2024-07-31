@@ -34,8 +34,7 @@ function pageSpecificFunctions() {
       tagName: "span",
     });
   
-    // Inizializza l'opacità degli elementi
-  
+     
     // Anima la visibilità del contenitore principale
     tl.to(".wrapper-hero", { opacity: 1, duration: 0.1 })
       .fromTo(
@@ -46,7 +45,7 @@ function pageSpecificFunctions() {
           y: 0,
           duration: 0.5,
           ease: "power1.out",
-          stagger: { amount: 0.3 },
+          stagger: { amount: 0.2 },
         }
       )
       .fromTo(
@@ -61,8 +60,8 @@ function pageSpecificFunctions() {
           rotationX: 0,
           duration: 1,
           ease: "back.out(1.7)",
-          stagger: 0.08,
-        }
+          stagger: 0.05,
+        },"<"
       )
 
       .fromTo(
