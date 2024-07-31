@@ -46,7 +46,7 @@ function pageSpecificFunctions() {
           y: 0,
           duration: 0.5,
           ease: "power1.out",
-          stagger: { amount: 0.5 },
+          stagger: { amount: 0.3 },
         }
       )
       .fromTo(
@@ -56,41 +56,22 @@ function pageSpecificFunctions() {
           rotationX: 90,
           transformOrigin: "bottom center",
         },
-        {
-          delay: 0.2,
+        {      
           opacity: 1,
           rotationX: 0,
           duration: 1,
           ease: "back.out(1.7)",
-          stagger: 0.1,
+          stagger: 0.08,
         }
       )
-      .fromTo(
-        ".usp .word",
-        { opacity: 0, x: -200 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          ease: "back.out(1.7)",
-          stagger: { amount: 0.3 },
-        },
-        "<"
-      )
-  
+
       .fromTo(
         "#nav",
         { opacity: 0, y: "-5rem" },
         { opacity: 1, y: "0", duration: 0.3, ease: "back.out(1.7)" },
         "<"
       )
-  
-      .fromTo(
-        ".heading-container",
-        { x: "50vw", opacity: 0 },
-        { x: "0", opacity: 1, duration: 0.5, ease: "power2" },
-        "<"
-      )
+
       .fromTo(
         ".usp .word",
         { opacity: 0, x: -200 },
@@ -103,6 +84,15 @@ function pageSpecificFunctions() {
         },
         "<"
       )
+  
+        
+      .fromTo(
+        ".heading-container",
+        { x: "50vw", opacity: 0 },
+        { x: "0", opacity: 1, duration: 0.5, ease: "power2" },
+        "<"
+      )
+      
       .fromTo(
         "#arrow",
         { opacity: 0 },
