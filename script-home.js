@@ -37,7 +37,17 @@ function pageSpecificFunctions() {
      
     // Anima la visibilità del contenitore principale
     tl.to(".wrapper-hero", { opacity: 1, duration: 0.1 })
-      
+    .fromTo(
+      ".brand-nav-hero .char",
+      { opacity: 0, y: -500 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power1.out",
+        stagger: { amount: 0.5 },
+      }
+    )      
       .fromTo(
         ".h1-usp .word",
         {
@@ -63,17 +73,15 @@ function pageSpecificFunctions() {
 
       .fromTo(
         ".usp .word",
-        { opacity: 0, x: -200 },
+        { opacity: 0,},
         {
           opacity: 1,
-          x: 0,
-          duration: 1,
+          duration: 0.5,
           ease: "back.out(1.7)",
           stagger: { amount: 0.3 },
         },
         "<"
       )
-  
         
       .fromTo(
         ".heading-container",
@@ -95,17 +103,7 @@ function pageSpecificFunctions() {
         { opacity: 1, ease: "linear", duration: 2 },
         "-=2" // Inizia 1 secondo prima della fine dell'animazione precedente
       )
-      .fromTo(
-        ".brand-nav-hero .char",
-        { opacity: 0, y: -500 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          ease: "power1.out",
-          stagger: { amount: 0.5 },
-        }
-      )
+      
       .to(
         ":root",
         {
