@@ -52,16 +52,14 @@ function pageSpecificFunctions() {
         ".h1-usp .word",
         {
           opacity: 0,
-          rotationX: 90,
-          transformOrigin: "bottom center",
         },
         {      
           opacity: 1,
           rotationX: 0,
-          duration: 0.6,
+          duration: 0.5,
           ease: "back.out(1.7)",
           stagger: 0.1,
-        }
+        },"<"
       )
 
       .fromTo(
@@ -73,13 +71,19 @@ function pageSpecificFunctions() {
 
       .fromTo(
         ".usp .word",
-        { opacity: 0,},
         {
-          opacity: 1,
-          duration: 0.5,
-          ease: "back.out(1.7)",
-          stagger: { amount: 0.3 },
+          opacity: 0,
+          rotationX: 90,
+          transformOrigin: "bottom center",
         },
+        {      
+          opacity: 1,
+          rotationX: 0,
+          duration: 0.6,
+          ease: "back.out(1.7)",
+          stagger: 0.1,
+        },     
+
         "<"
       )
         
