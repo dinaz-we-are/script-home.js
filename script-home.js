@@ -45,7 +45,7 @@ function pageSpecificFunctions() {
           y: 0,
           duration: 0.5,
           ease: "power1.out",
-          stagger: { amount: 0.2 },
+          stagger: { amount: 0.3 },
         }
       )
       .fromTo(
